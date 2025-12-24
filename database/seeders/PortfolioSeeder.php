@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use App\Models\Profile;
 use App\Models\Experience;
 use App\Models\Skill;
@@ -14,13 +15,8 @@ class PortfolioSeeder extends Seeder
 {
     public function run(): void
     {
-        // Clear existing data first
-        Profile::truncate();
-        Experience::truncate();
-        Skill::truncate();
-        Project::truncate();
-        Education::truncate();
-        SocialLink::truncate();
+        // Disable foreign key checks for PostgreSQL
+        DB::statement('TRUNCATE TABLE profiles, experiences, skills, projects, education, social_links RESTART IDENTITY CASCADE');
 
         // Profile
         Profile::create([
