@@ -25,7 +25,7 @@ class PortfolioSeeder extends Seeder
             'location' => 'Meerut, UP',
             'email' => 'abhichauhan200504@gmail.com',
             'phone' => '+91 8279422813',
-            'bio' => '🚀 Computer Science Engineering graduate with hands-on experience in Laravel, PHP, JavaScript, and React-based frontend development. Skilled in building responsive and dynamic web applications with a strong foundation in data structures, algorithms, and problem-solving. Currently expanding expertise in backend development, focusing on databases, APIs, and server-side programming, with the goal of transitioning into a backend engineering role.',
+            'bio' => 'Computer Science Engineering graduate with hands-on experience in Laravel, PHP, JavaScript, and React-based frontend development. Skilled in building responsive and dynamic web applications with a strong foundation in data structures, algorithms, and problem-solving. Currently expanding expertise in backend development, focusing on databases, APIs, and server-side programming, with the goal of transitioning into a backend engineering role.',
             'availability' => 'Open',
             'years_experience' => '6+ Months',
             'avatar' => 'https://res.cloudinary.com/dfsdezrkr/image/upload/v1766513936/image_3_sesdcl.png',
