@@ -16,7 +16,7 @@ class PortfolioSeeder extends Seeder
     public function run(): void
     {
         // Disable foreign key checks for PostgreSQL
-        DB::statement('TRUNCATE TABLE profiles, experiences, skills, projects, education, social_links RESTART IDENTITY CASCADE');
+        DB::statement('TRUNCATE TABLE profiles, experience, skills, projects, education, social_links RESTART IDENTITY CASCADE');
 
         // Profile
         Profile::create([
